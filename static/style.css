@@ -283,26 +283,26 @@ footer .card > .card-header .card-img-top {
   border-radius: 50% !important;
 }
 
-/* Let the technology list fill the available width at every viewport. */
+/* Keep the technology list familiar, while allowing its columns to adapt. */
 #about ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  display: grid;
+  gap: 0 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
   max-width: none;
 }
 
 #about ul li {
-  background-color: color-mix(in srgb, var(--primary-color) 11%, var(--secondary-color));
-  border: 1px solid color-mix(in srgb, var(--primary-color) 22%, transparent);
-  border-radius: 0.25rem;
-  color: var(--text-secondary-color);
-  font-size: 0.84rem;
-  margin: 0;
-  padding: 0.28rem 0.54rem;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+  margin-bottom: 10px;
+  padding: 0 0 0 20px;
 }
 
 #about ul li::before {
-  content: none;
+  content: "▹";
 }
 
 /* Keep the scroll-up header above content and offset in-page navigation beneath it. */
