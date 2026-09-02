@@ -1,0 +1,11 @@
+{{- $networks := .Site.Params.footer.socialNetworks -}}
+{{- if or $networks.youtube $networks.medium -}}
+  <div class="footer-extra-social-links text-center pt-2">
+    {{- with $networks.youtube -}}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+    {{- end -}}
+    {{- with $networks.medium -}}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+    {{- end -}}
+  </div>
+{{- end -}}

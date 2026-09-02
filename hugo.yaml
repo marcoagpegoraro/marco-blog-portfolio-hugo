@@ -1,0 +1,575 @@
+baseURL: "https://pegoraro.dev/"
+locale: "en-us"
+title: "Marco Pegoraro"
+theme: hugo-profile
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    label: "English"
+    locale: "en-us"
+    weight: 1
+  pt:
+    label: "Português"
+    locale: "pt-br"
+    weight: 2
+    params:
+      hero:
+        intro: "Olá, meu nome é"
+        title: "Marco Pegoraro."
+        subtitle: "Engenheiro de Software | AWS | Java | JavaScript | Go"
+        content: "Desenvolvo software prático e confiável e escrevo sobre tecnologia, programação e os interesses que fazem parte da minha vida."
+        image: "/images/marco-linkedin-profile.webp"
+        button:
+          name: "Ler o blog"
+      about:
+        title: "Sobre Mim"
+        image: "/images/marco-eiffel-tower.webp"
+        content: |-
+          Sou Marco, engenheiro de software com experiência em e-commerce, bancos e logística. Minha principal especialidade é Java, e também trabalhei com Kotlin, Python, JavaScript, Angular, React, C#, Go e AWS. Possuo a certificação AWS Solutions Architect – Associate.
+
+          Gosto de aprender novas tecnologias e encontrar a solução mais eficaz para cada desafio. Fora do trabalho, gosto de carros, música, relógios e tecnologia vintage — especialmente computadores e videogames dos anos 90 e 2000.
+        skills:
+          enable: true
+          title: "Tecnologias com as quais trabalhei:"
+          items: ["Java", "Kotlin", "Spring", "AWS", "Kafka", "Python", "JavaScript", "TypeScript", "Angular", "React", "Go", "Terraform"]
+      experience:
+        title: "Experiência"
+      education:
+        title: "Formação"
+      achievements:
+        title: "Certificações e Reconhecimentos"
+      projects:
+        title: "Projetos e Trabalhos Selecionados"
+      contact:
+        title: "Entre em Contato"
+        content: "Minha caixa de entrada está sempre aberta. Se você tem uma pergunta, uma ideia de projeto ou apenas quer dizer olá, farei o possível para responder."
+        btnName: "Enviar e-mail"
+      footer:
+        recentPosts:
+          title: "Posts Recentes"
+          viewAllName: "Ver todos os posts"
+  it:
+    label: "Italiano"
+    locale: "it-it"
+    weight: 3
+    params:
+      hero:
+        intro: "Ciao, mi chiamo"
+        title: "Marco Pegoraro."
+        subtitle: "Ingegnere del software | AWS | Java | JavaScript | Go"
+        content: "Creo software pratico e affidabile e scrivo di tecnologia, programmazione e delle passioni che fanno parte della mia vita."
+        image: "/images/marco-linkedin-profile.webp"
+        button:
+          name: "Leggi il blog"
+      about:
+        title: "Chi Sono"
+        image: "/images/marco-eiffel-tower.webp"
+        content: |-
+          Sono Marco, un ingegnere del software con esperienza nell'e-commerce, nel settore bancario e nella logistica. Java è la mia principale competenza; ho lavorato anche con Kotlin, Python, JavaScript, Angular, React, C#, Go e AWS. Ho ottenuto la certificazione AWS Solutions Architect – Associate.
+
+          Mi piace imparare nuove tecnologie e trovare la soluzione più efficace per ogni sfida. Fuori dal lavoro mi appassionano auto, musica, orologi e tecnologia vintage, in particolare computer e videogiochi degli anni '90 e 2000.
+        skills:
+          enable: true
+          title: "Tecnologie con cui ho lavorato:"
+          items: ["Java", "Kotlin", "Spring", "AWS", "Kafka", "Python", "JavaScript", "TypeScript", "Angular", "React", "Go", "Terraform"]
+      experience:
+        title: "Esperienza"
+      education:
+        title: "Formazione"
+      achievements:
+        title: "Certificazioni e riconoscimenti"
+      projects:
+        title: "Progetti e lavori selezionati"
+      contact:
+        title: "Contattami"
+        content: "La mia casella di posta è sempre aperta. Se hai una domanda, un'idea per un progetto o vuoi semplicemente salutarmi, farò del mio meglio per risponderti."
+        btnName: "Invia un'email"
+      footer:
+        recentPosts:
+          title: "Articoli recenti"
+          viewAllName: "Vedi tutti gli articoli"
+  nl:
+    label: "Nederlands"
+    locale: "nl-nl"
+    weight: 4
+    params:
+      hero:
+        intro: "Hallo, mijn naam is"
+        title: "Marco Pegoraro."
+        subtitle: "Software Engineer | AWS | Java | JavaScript | Go"
+        content: "Ik bouw praktische, betrouwbare software en schrijf over technologie, programmeren en de interesses die mijn leven vormgeven."
+        image: "/images/marco-linkedin-profile.webp"
+        button:
+          name: "Lees mijn blog"
+      about:
+        title: "Over Mij"
+        image: "/images/marco-eiffel-tower.webp"
+        content: |-
+          Ik ben Marco, een software engineer met ervaring in e-commerce, bankieren en logistiek. Java is mijn belangrijkste expertise; daarnaast heb ik gewerkt met Kotlin, Python, JavaScript, Angular, React, C#, Go en AWS. Ik heb de AWS Solutions Architect – Associate-certificering.
+
+          Ik leer graag nieuwe technologieën en zoek voor elke uitdaging de meest doeltreffende oplossing. Buiten mijn werk houd ik van auto's, muziek, horloges en vintage technologie, vooral computers en videogames uit de jaren 90 en 00.
+        skills:
+          enable: true
+          title: "Technologieën waarmee ik heb gewerkt:"
+          items: ["Java", "Kotlin", "Spring", "AWS", "Kafka", "Python", "JavaScript", "TypeScript", "Angular", "React", "Go", "Terraform"]
+      experience:
+        title: "Ervaring"
+      education:
+        title: "Opleiding"
+      achievements:
+        title: "Certificeringen en erkenning"
+      projects:
+        title: "Projecten en geselecteerd werk"
+      contact:
+        title: "Neem contact op"
+        content: "Mijn inbox staat altijd open. Heb je een vraag, een projectidee of wil je gewoon hallo zeggen, dan doe ik mijn best om te antwoorden."
+        btnName: "Stuur een e-mail"
+      footer:
+        recentPosts:
+          title: "Recente berichten"
+          viewAllName: "Bekijk alle berichten"
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Read Marco's writing
+      url: /posts/
+      weight: 1
+
+pagination:
+  pagerSize: 12
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+    ordered: true
+
+privacy:
+  youtube:
+    privacyEnhanced: true
+
+params:
+  title: "Marco Pegoraro"
+  description: "Software engineer writing about technology, programming, life, and tech reviews."
+  favicon: "/favicon.ico"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+  customCSS: true
+
+  theme:
+    defaultTheme: "dark"
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.6
+    textAlign: left
+  color:
+    textColor: "#383838"
+    secondaryTextColor: "#585858"
+    textLinkColor: "#47798e"
+    backgroundColor: "#f8f8f8"
+    secondaryBackgroundColor: "#e8e8e8"
+    primaryColor: "#47798e"
+    secondaryColor: "#e8e8e8"
+    darkmode:
+      textColor: "#d8d8d8"
+      secondaryTextColor: "#b8b8b8"
+      textLinkColor: "#86c1b9"
+      backgroundColor: "#181818"
+      secondaryBackgroundColor: "#282828"
+      primaryColor: "#7cafc2"
+      secondaryColor: "#282828"
+
+  navbar:
+    align: ms-auto
+    brandName: "Marco Pegoraro"
+    showBrandLogo: false
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: true
+    menus:
+      disableAchievements: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Marco Pegoraro."
+    subtitle: "Software Engineer at Outtask | Java | CKAD | AWS & Azure | AI"
+    content: "I build practical, reliable software across cloud, data, and web platforms—and write about the technologies and interests that shape my work and life."
+    image: "/images/marco-linkedin-profile.webp"
+    roundImage: true
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Read my blog"
+      url: "/posts/"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: "https://github.com/marcoagpegoraro"
+        - icon: fab fa-linkedin
+          url: "https://www.linkedin.com/in/marco-antonio-goncalves/"
+        - icon: fab fa-youtube
+          url: "https://www.youtube.com/@marcoagpegoraro"
+        - icon: fab fa-medium
+          url: "https://medium.com/@tete5423"
+        - icon: fas fa-envelope
+          url: "mailto:marco@pegoraro.dev"
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/marco-eiffel-tower.webp"
+    content: |-
+      I'm Marco, a software engineer with eight years of experience delivering software across e-commerce, banking, logistics, and consulting. Java is my core expertise, and I also work with Kotlin, Python, JavaScript, Angular, React, C#, Go, and AWS. I hold two AWS certifications, an Azure certification, CKAD, and an MBA in Solution Architecture.
+
+      My experience spans Java and Kotlin back ends with Spring Boot and Kafka; AWS and Terraform; data platforms with Glue, Athena, and QuickSight; and front ends with Angular, React, and Next.js. I enjoy learning new technologies—including practical AI, observability, and cloud-native tooling—and finding the most effective solution to each problem.
+
+      Outside work, I’m into cars, music, watches, and vintage 90s/00s computers and video games—especially the history behind how technology evolved.
+    skills:
+      enable: true
+      title: "Technologies I’ve worked with:"
+      items: ["Java", "Kotlin", "Spring Boot", "Apache Kafka", "OpenFeign", "AWS", "DynamoDB", "SNS & SQS", "Terraform", "GitHub Actions", "Python", "JavaScript", "TypeScript", "Angular", "React", "Next.js", "Go", "Fiber", "GORM", "Django", "Vue 3", "dbt", "Airbyte", "PostgreSQL", "OpenTelemetry", "Prometheus", "Grafana", "AWS Glue", "Athena", "QuickSight"]
+
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+      - company: "Outtask"
+        companyUrl: "https://outtask.nl/en/"
+        logo: "/portfolio/public/resume-page/outtask.svg"
+        location: "Amsterdam, Netherlands"
+        country: "Netherlands"
+        countryFlag: "🇳🇱"
+        jobs:
+          - name: "Software Engineer"
+            date: "January 2026 – Present"
+            content: |-
+              I build end-to-end products across web, data, and AI. Recent work includes a Django and Vue 3 CV Generator using the Anthropic API, and an internal BI dashboard platform built with Next.js and the Anthropic SDK, applying MCP and RAG practices.
+
+              I also developed dbt Core ELT workflows for a data warehouse, with daily GitHub Actions CI/CD, and an Airbyte integration collecting data from multiple sources into PostgreSQL. I presented how to integrate OpenTelemetry, Prometheus, and Grafana with Java Spring Boot applications and network nodes, while owning architecture, delivery, deployment, and production support.
+            technologies:
+              - name: "Java"
+                logo: "/portfolio/public/resume-page/tech-logos/java.png"
+              - name: "Python"
+                logo: "/portfolio/public/resume-page/tech-logos/python.png"
+              - name: "JavaScript"
+                logo: "/portfolio/public/resume-page/tech-logos/javascript.png"
+              - name: "AWS"
+                logo: "/portfolio/public/resume-page/tech-logos/fargate.png"
+              - name: "Next.js"
+                logo: "/portfolio/public/resume-page/tech-logos/nextdotjs.webp"
+              - name: "Vue 3"
+                logo: "/portfolio/public/resume-page/tech-logos/vuedotjs.webp"
+              - name: "dbt"
+                logo: "/portfolio/public/resume-page/tech-logos/dbt.webp"
+              - name: "Airbyte"
+                logo: "/portfolio/public/resume-page/tech-logos/airbyte.webp"
+              - name: "OpenTelemetry"
+                logo: "/portfolio/public/resume-page/tech-logos/opentelemetry.webp"
+              - name: "PostgreSQL"
+                logo: "/portfolio/public/resume-page/tech-logos/postgresql.webp"
+              - name: "GitHub Actions"
+                logo: "/portfolio/public/resume-page/tech-logos/githubactions.webp"
+              - name: "Anthropic"
+                logo: "/portfolio/public/resume-page/tech-logos/anthropic.webp"
+      - company: "Itaú Unibank"
+        companyUrl: "https://www.itau.com.br/"
+        logo: "/portfolio/public/resume-page/itau.png"
+        location: "São Paulo, Brazil"
+        country: "Brazil"
+        countryFlag: "🇧🇷"
+        jobs:
+          - name: "Software Engineer"
+            date: "June 2021 – December 2025"
+            content: |-
+              I develop and maintain systems for registering credit operations at Latin America’s largest bank. Previously, I built data-integration solutions using Java, EMR, Kafka, and AWS.
+
+              My work includes Java 11 and Kotlin applications, DynamoDB, Python and JavaScript Lambda functions, HTTP and asynchronous communication through SNS, SQS, and Kafka with Schema Registry and Apache Avro. I also implemented a data-mesh flow with DynamoDB Streams, Lambda-based Parquet conversion, Glue Catalog, and Athena.
+            technologies:
+              - name: "Java 11"
+                logo: "/portfolio/public/resume-page/tech-logos/java.png"
+              - name: "Kotlin"
+                logo: "/portfolio/public/resume-page/tech-logos/kotlin.png"
+              - name: "Spring"
+                logo: "/portfolio/public/resume-page/tech-logos/spring.png"
+              - name: "DynamoDB"
+                logo: "/portfolio/public/resume-page/tech-logos/dynamo.png"
+              - name: "AWS Lambda"
+                logo: "/portfolio/public/resume-page/tech-logos/lambda.png"
+              - name: "Kafka"
+                logo: "/portfolio/public/resume-page/tech-logos/kafka.png"
+              - name: "EMR"
+                logo: "/portfolio/public/resume-page/tech-logos/emr.png"
+              - name: "JavaScript"
+                logo: "/portfolio/public/resume-page/tech-logos/javascript.png"
+              - name: "Python"
+                logo: "/portfolio/public/resume-page/tech-logos/python.png"
+              - name: "Terraform"
+                logo: "/portfolio/public/resume-page/tech-logos/terraform.png"
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fab fa-java
+                  url: "https://www.java.com/"
+                - icon: fab fa-aws
+                  url: "https://aws.amazon.com/"
+      - company: "B2W Digital"
+        companyUrl: "https://www.americanas.com.br/"
+        logo: "/portfolio/public/resume-page/b2w.png"
+        location: "São Paulo, Brazil"
+        country: "Brazil"
+        countryFlag: "🇧🇷"
+        jobs:
+          - name: "Software Developer"
+            date: "September 2020 – June 2021"
+            content: |-
+              I worked on systems that delivered customer notifications by email and WhatsApp. The services used Java 11, Apache Kafka for asynchronous message delivery, and AWS.
+
+              I also participated in the creation of a new email and WhatsApp delivery and configuration system built with Java and Angular.
+            technologies:
+              - name: "Java 11"
+                logo: "/portfolio/public/resume-page/tech-logos/java.png"
+              - name: "Spring"
+                logo: "/portfolio/public/resume-page/tech-logos/spring.png"
+              - name: "Angular"
+                logo: "/portfolio/public/resume-page/tech-logos/angular.svg"
+              - name: "Kafka"
+                logo: "/portfolio/public/resume-page/tech-logos/kafka.png"
+              - name: "AWS Fargate"
+                logo: "/portfolio/public/resume-page/tech-logos/fargate.png"
+      - company: "IBM Brazil"
+        companyUrl: "https://www.ibm.com/br-pt"
+        logo: "/portfolio/public/resume-page/ibm.png"
+        location: "Hortolândia, Brazil"
+        country: "Brazil"
+        countryFlag: "🇧🇷"
+        jobs:
+          - name: "Java Developer"
+            date: "January 2020 – September 2020"
+            content: |-
+              On the Itaú Unibank project, I maintained Java 8 applications that made HTTP calls; when calls needed to run concurrently, I used RxJava to coordinate them.
+
+              I also helped teach Java and object-oriented programming to new project interns, which earned me the IBM Educator Badge.
+            technologies:
+              - name: "Java 8"
+                logo: "/portfolio/public/resume-page/tech-logos/java.png"
+              - name: "Spring"
+                logo: "/portfolio/public/resume-page/tech-logos/spring.png"
+          - name: "Intern"
+            date: "August 2019 – January 2020"
+            content: "Internship at IBM Brazil, building early professional experience on the Itaú Unibank project."
+            technologies:
+              - name: "Java"
+                logo: "/portfolio/public/resume-page/tech-logos/java.png"
+              - name: "SQL"
+      - company: "TI+ Solutions"
+        logo: "/portfolio/public/resume-page/timais.png"
+        location: "Americana, Brazil"
+        country: "Brazil"
+        countryFlag: "🇧🇷"
+        jobs:
+          - name: "Technical Developer"
+            date: "July 2018 – August 2019"
+            content: |-
+              This was my first programming role. I began with C# and ASP.NET alongside AngularJS, then became responsible for PHP projects and mobile development with Ionic, where I gained substantial TypeScript experience.
+
+              I also worked with 4GL, the language used by TOTVS in the Logix ERP system. It is similar to database procedures, with the addition of screen-creation methods. I remain grateful for everything I learned at TI+.
+            technologies:
+              - name: "C#"
+                logo: "/portfolio/public/resume-page/tech-logos/csharp.png"
+              - name: "ASP.NET"
+                logo: "/portfolio/public/resume-page/tech-logos/aspnet.jpg"
+              - name: "AngularJS"
+                logo: "/portfolio/public/resume-page/tech-logos/angularjs.png"
+              - name: "Ionic"
+                logo: "/portfolio/public/resume-page/tech-logos/ionic.png"
+              - name: "PHP"
+                logo: "/portfolio/public/resume-page/tech-logos/php.png"
+              - name: "Informix 4GL"
+                logo: "/portfolio/public/resume-page/tech-logos/totvs.jpg"
+
+  education:
+    enable: true
+    title: "Education"
+    index: false
+    items:
+      - title: "Master of Business Administration (MBA) in Solutions Architecture"
+        school:
+          name: "FIAP"
+          url: "https://www.fiap.com.br/"
+          logo: "/portfolio/public/resume-page/fiap.jpg"
+        date: "September 2024 – September 2025"
+        content: |-
+          Solution-architecture MBA focused on practical problem-solving and hands-on activities covering the different architecture types in the TOGAF 9.2 framework, as well as the business architecture described in TOGAF 10.
+
+          The program strengthened my ability to connect technical architecture decisions with business needs.
+      - title: "Information Security Degree"
+        school:
+          name: "FATEC Americana"
+          url: "https://www.fatec.edu.br/"
+          logo: "/portfolio/public/resume-page/fatec.png"
+        date: "2017 – 2020"
+        content: |-
+          Information-security degree focused on network management and the principal OSI-model protocols: Ethernet, IPv4, IPv6, DHCP, ARP, TCP, and UDP. Coursework also covered subnet rules, firewall configuration for secure networks, and Linux.
+
+          My final paper, completed with a colleague, explored a system that identifies phishing emails with the Naive Bayes algorithm.
+      - title: "Technical IT Program (Informatics) and Secondary Education"
+        school:
+          name: "ETEC Polivalente de Americana"
+          url: "https://etecpolivalente.cps.sp.gov.br/"
+          logo: "/portfolio/public/resume-page/poli.png"
+        date: "2014 – 2016"
+        content: |-
+          I completed secondary education alongside a technical IT program. It was my first formal contact with programming and where I discovered the career I wanted to pursue.
+
+          The program covered C, object-oriented programming, computer maintenance, networking, HTML, and basic Android development with Java.
+
+  achievements:
+    enable: true
+    title: "Certifications & Recognition"
+    items:
+      - title: "AWS Certified Solutions Architect – Associate"
+        content: "AWS certification earned in August 2024."
+        url: "https://www.credly.com/badges/fd13c98b-8cd1-4815-b7f8-bb314d64a9d0"
+        image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+      - title: "AWS Certified Cloud Practitioner"
+        content: "AWS certification earned in August 2021."
+        url: "https://www.credly.com/badges/359747ba-500f-464f-9bc6-9484221b136c"
+        image: "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+      - title: "IBM Recognized Teacher / Educator"
+        content: "Recognized for teaching Java and object-oriented programming to new IBM interns."
+        url: "https://www.credly.com/badges/d44e38f6-81cb-4c23-831d-4817b5759a28"
+        image: "/images/badges/ibm-educator.png"
+      - title: "Microsoft Certified: Azure Fundamentals"
+        content: "AZ-900 credential covering cloud concepts, core Azure services, and management and governance."
+        url: "https://learn.microsoft.com/en-au/users/marcoantoniogonalvespegoraro-3418/credentials/411fece2688103db"
+        image: "/images/badges/azure-fundamentals.svg"
+      - title: "Certified Kubernetes Application Developer (CKAD)"
+        content: "Kubernetes application development: designing, deploying, observing, and troubleshooting cloud-native workloads."
+        url: "https://www.credly.com/badges/9745649d-fbee-4a70-8b49-4c7b69284d5d"
+        image: "/images/badges/ckad.png"
+      - title: "LFS148: Getting Started with OpenTelemetry"
+        content: "Linux Foundation learning badge for hands-on OpenTelemetry instrumentation and cloud-native observability."
+        url: "https://www.credly.com/badges/7b36ef95-0287-419a-bb38-2c84b71d730c"
+        image: "/images/badges/getting-started-opentelemetry.png"
+      - title: "Credly profile"
+        content: "See my complete collection of verified badges on Credly."
+        url: "https://www.credly.com/users/marco-antonio-goncalves-pegoraro/badges"
+        image: "/images/badges/credly.png"
+        profile: true
+
+  projects:
+    enable: true
+    title: "Projects & Selected Work"
+    items:
+      - title: "Blog built with Hugo"
+        content: "My personal blog, now part of this portfolio: why I chose Hugo and how I migrated from my Go implementation."
+        image: "/images/1aIBlqgTuJH5IhAd5rWAe_A.webp"
+        featured:
+          name: "Read the article"
+          link: "/posts/i-migrated-my-blog-from-go-to-hugo-heres-why/"
+        badges: ["Hugo", "Go"]
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/marcoagpegoraro/marco_blog_hugo"
+      - title: "VLang Backend Fight project"
+        content: "A project built in V for the Backend Fight friendly competition."
+        image: "https://i.ytimg.com/vi/YBljoTbdeQ4/maxresdefault.jpg"
+        featured:
+          name: "Watch video"
+          link: "https://youtu.be/YBljoTbdeQ4"
+        badges: ["V", "Backend"]
+      - title: "Dart web application with Aqueduct"
+        content: "A tutorial and project covering the basics, database connection, and JWT authentication."
+        image: "/portfolio/public/projects-page/aqueduct.png"
+        featured:
+          name: "Read the article"
+          link: "/posts/criando-uma-aplica%C3%A7%C3%A3o-web-com-dart-parte-1-aqueduct-b%C3%A1sico-conex%C3%A3o-com-banco-e-autentica%C3%A7%C3%A3o-jwt-6/"
+        badges: ["Dart", "Aqueduct", "JWT"]
+      - title: "AngularDart web application"
+        content: "A follow-up tutorial on AngularDart fundamentals, routing, and HTTP calls."
+        image: "/portfolio/public/projects-page/angulardart.png"
+        featured:
+          name: "Read the article"
+          link: "/posts/criando-uma-aplica%C3%A7%C3%A3o-web-com-dart-parte-2-angulardart-b%C3%A1sico-roteamento-e-chamadas-http-7/"
+        badges: ["Dart", "AngularDart"]
+      - title: "GDG Campinas presentation"
+        content: "Online presentation about creating a backend web application with Dart."
+        image: "/portfolio/public/projects-page/gdgonline.gif"
+        featured:
+          name: "Watch presentation"
+          link: "https://www.youtube.com/watch?v=0kKge3K0ZwI"
+        badges: ["Dart", "Community"]
+      - title: "FATEC Open Doors"
+        content: "A web-app presentation simulating a phishing attack."
+        image: "/portfolio/public/projects-page/fpa.png"
+        featured:
+          name: "See the presentation"
+          link: "https://www.linkedin.com/posts/murilohenriquegomes_hacking-kalilinux-activity-6595643833621467136-Xtak/"
+        badges: ["Security", "Education"]
+
+  contact:
+    enable: true
+    title: "Contact Me"
+    content: "My inbox is always open. Whether you have a question, a project in mind, or simply want to say hi, I’ll do my best to get back to you."
+    btnName: "Send an email"
+    btnLink: "mailto:marco@pegoraro.dev"
+
+  footer:
+    recentPosts:
+      path: "posts"
+      count: 3
+      title: "Recent Posts"
+      viewAllName: "View all posts"
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: "https://github.com/marcoagpegoraro"
+      linkedin: "https://www.linkedin.com/in/marco-antonio-goncalves/"
+      youtube: "https://www.youtube.com/@marcoagpegoraro"
+      medium: "https://medium.com/@tete5423"
+
+  listPages:
+    disableFeaturedImage: false
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: false
+  terms:
+    read: "Read"
+    toc: "Table of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"

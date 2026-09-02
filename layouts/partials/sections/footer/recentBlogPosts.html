@@ -1,0 +1,36 @@
+{{ $recentPostsPath := .Site.Params.footer.recentPosts.path | default "blogs" }}
+{{ $baseFooter := .Site.Params.footer }}
+{{ $localizedFooter := .Site.Language.Params.footer }}
+{{ $recentPostsTitle := $localizedFooter.recentPosts.title | default $baseFooter.recentPosts.title | default (i18n "recent_posts") }}
+{{ $viewAllName := $localizedFooter.recentPosts.viewAllName | default $baseFooter.recentPosts.viewAllName | default "View all posts" }}
+{{ $blogsSection := site.GetPage "section" $recentPostsPath }}
+{{ if not $blogsSection }}
+  {{ range hugo.Sites }}
+    {{ if eq .Language.Lang "en" }}{{ $blogsSection = .GetPage "section" $recentPostsPath }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ $allSectionPosts := slice }}
+{{ if $blogsSection }}{{ $allSectionPosts = $blogsSection.RegularPages }}{{ end }}
+{{ if and (gt (len $allSectionPosts) 0) (.Site.Params.footer.recentPosts.enable | default false) }}
+<div class="container py-3" id="recent-posts">
+  {{ $recentPosts := $allSectionPosts | first (.Site.Params.footer.recentPosts.count | default 3) }}
+  <div class="h3 text-center text-secondary py-3">{{ $recentPostsTitle }}</div>
+  <div class="row justify-content-center">
+    {{ range $recentPosts }}
+      {{ $image := .Params.image | default .Params.header_image }}
+      <div class="col-lg-4 col-md-6 pt-2"><div class="card h-100">
+        {{ if and (not (.Site.Params.footer.recentPosts.disableFeaturedImage | default false)) $image }}
+          <div class="card-header"><a href="{{ .RelPermalink }}"><img src="{{ $image }}" class="card-img-top" alt="{{ .Title }}"></a></div>
+        {{ end }}
+        <div class="card-body bg-transparent p-3 shadow-sm">
+          <a href="{{ .RelPermalink }}" class="primary-font card-title"><h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5></a>
+          {{ $excerpt := .Description | default (.Plain | truncate 220) }}
+          <div class="card-text secondary-font"><p>{{ $excerpt | plainify | truncate 220 }}</p></div>
+        </div>
+        <div class="mt-auto card-footer"><span class="float-start">{{ .Date | time.Format (":date_long" | default "January 2, 2006") }}</span><a href="{{ .RelPermalink }}" class="float-end btn btn-outline-info btn-sm">{{ .Site.Params.terms.read | default (i18n "read") }}</a></div>
+      </div></div>
+    {{ end }}
+  </div>
+  <div class="text-center pt-4"><a class="btn btn-outline-info" href="{{ "/posts/" | relURL }}">{{ $viewAllName }}</a></div>
+</div>
+{{ end }}

@@ -1,0 +1,52 @@
+{{ if .Site.Params.experience.enable | default false }}
+{{ $baseExperience := .Site.Params.experience }}
+{{ $localizedExperience := .Site.Language.Params.experience }}
+{{ $title := $localizedExperience.title | default $baseExperience.title | default (i18n "experience") }}
+{{ $items := $localizedExperience.items | default $baseExperience.items }}
+<section id="experience" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ $title }}</h3>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-9 col-lg-9 py-5">
+        <div class="experience-list">
+          {{ range $items }}
+            {{ $company := .company }}{{ $companyUrl := .companyUrl }}{{ $companyLogo := .logo }}
+            {{ $location := .location }}{{ $country := .country }}{{ $countryFlag := .countryFlag }}
+            {{ range .jobs }}
+            <article class="experience-card">
+              <div class="experience-entry">
+                {{ if $companyLogo }}
+                  {{ if $companyUrl }}
+                  <a class="company-logo" href="{{ $companyUrl }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $company }}">
+                    <img src="{{ $companyLogo }}" alt="{{ $company }} logo">
+                  </a>
+                  {{ else }}
+                  <div class="company-logo" aria-label="{{ $company }}">
+                    <img src="{{ $companyLogo }}" alt="{{ $company }} logo">
+                  </div>
+                  {{ end }}
+                {{ end }}
+                <div class="experience-entry-content">
+                  <header class="experience-heading">
+                    <div>
+                      <h4>{{ .name }}</h4>
+                      {{ if $companyUrl }}<a class="experience-company" href="{{ $companyUrl }}" target="_blank" rel="noopener noreferrer">{{ $company }}</a>{{ else }}<span class="experience-company">{{ $company }}</span>{{ end }}
+                    </div>
+                    <div class="experience-meta">
+                      <span>{{ .date }}</span>
+                      {{ with $location }}<span>{{ if $countryFlag }}<span role="img" aria-label="{{ $country }}">{{ $countryFlag }}</span> {{ end }}{{ . }}</span>{{ end }}
+                    </div>
+                  </header>
+                  <div class="experience-description">{{ .content | markdownify }}</div>
+                  {{ with .technologies }}<div class="experience-technologies" aria-label="Technologies used">{{ range . }}<span class="badge">{{ with .logo }}<img src="{{ . }}" alt="" aria-hidden="true">{{ end }}{{ .name | default . }}</span>{{ end }}</div>{{ end }}
+                </div>
+              </div>
+            </article>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

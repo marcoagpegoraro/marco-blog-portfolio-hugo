@@ -1,0 +1,44 @@
+{{ if .Site.Params.achievements.enable | default false }}
+{{- $achievements := .Site.Language.Params.achievements | default .Site.Params.achievements -}}
+{{- $items := $achievements.items | default .Site.Params.achievements.items -}}
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $achievements.title | default .Site.Params.achievements.title | default (i18n "achievements") }}</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                {{ range where $items "profile" "ne" true }}
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card certification-card my-3 h-100" href="{{ .url }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer">
+                        {{ if .image }}
+                        <div class="card-head">
+                            <img class="card-img-top" src="{{ .image }}" alt="{{ .title }} badge">
+                        </div>
+                        {{ else if .mark }}
+                        <div class="card-head achievement-mark-wrap" aria-hidden="true">
+                            <span class="achievement-mark">{{ .mark }}</span>
+                        </div>
+                        {{ end }}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .title }}</h5>
+                            <div class="card-text secondary-font">{{ .content }}</div>
+                        </div>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ range where $items "profile" true }}
+        <div class="credly-profile-wrapper">
+            <a class="credly-profile-cta" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+                {{ with .image }}<img src="{{ . }}" alt="Credly logo">{{ end }}
+                <span class="credly-profile-copy">
+                    <strong>{{ .title }}</strong>
+                    <span>{{ .content }}</span>
+                </span>
+                <span class="credly-profile-action">View profile <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

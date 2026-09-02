@@ -1,0 +1,20 @@
+{{ define "head" }}
+<meta name="description" content={{ .Site.Params.description }}>
+<link rel="stylesheet" href="{{ (printf "%scss/index.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<script defer src="{{ (printf "%sfontawesome-6/all-6.4.2.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+<script defer src="{{ (printf "%sjs/hero-scroll-cue.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+{{ end }}
+
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+{{- partial "sections/hero/index.html" . -}}
+<a class="hero-scroll-cue" href="#about" aria-label="Scroll to the About section"><span aria-hidden="true">↓</span></a>
+{{- partial "sections/about.html" . -}}
+{{- partial "sections/experience.html" . -}}
+{{- partial "sections/education.html" . -}}
+{{- partial "sections/projects.html" . -}}
+{{- partial "sections/achievements.html" . -}}
+{{- partial "sections/contact.html" . -}}
+{{ end }}
