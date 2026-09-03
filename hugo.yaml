@@ -7,11 +7,11 @@ defaultContentLanguageInSubdir: false
 
 languages:
   en:
-    languageName: "English"
+    label: "English"
     locale: "en-us"
     weight: 1
   pt:
-    languageName: "Português"
+    label: "Português"
     locale: "pt-br"
     weight: 2
     params:
@@ -51,7 +51,7 @@ languages:
           title: "Posts Recentes"
           viewAllName: "Ver todos os posts"
   it:
-    languageName: "Italiano"
+    label: "Italiano"
     locale: "it-it"
     weight: 3
     params:
@@ -91,7 +91,7 @@ languages:
           title: "Articoli recenti"
           viewAllName: "Vedi tutti gli articoli"
   nl:
-    languageName: "Nederlands"
+    label: "Nederlands"
     locale: "nl-nl"
     weight: 4
     params:

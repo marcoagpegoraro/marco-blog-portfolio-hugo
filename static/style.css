@@ -317,6 +317,20 @@ footer .card > .card-header .card-img-top {
   background-color: var(--background-color) !important;
 }
 
+/* On mobile, keep the expanded navigation in one stable sticky header. */
+@media (max-width: 991.98px) {
+  #profileHeader,
+  #profileHeader.showHeaderOnTop {
+    position: sticky;
+    top: 0;
+  }
+
+  #profileHeader .navbar-collapse {
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
+  }
+}
+
 section[id] {
   scroll-margin-top: 5.75rem;
 }
