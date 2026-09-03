@@ -11,7 +11,7 @@ Inglorious Bastards é uma obra prima do cinema, o tempo de mais de dez anos de 
 
 Estou começando a estudar italiano e, como todo inicio de aprendizado de uma nova lingua, buscamos referencias em filmes, series, musicas, etc. para observar como a lingua é falada. O objetivo deste artigo é dissecar a cena do filme na qual a personagem Bridget Von Hammersmark (Diane Kruger) apresenta o trio de americanos, o personagem de Brad Pitt disfarçado do duble de cinema Enzo Gorlami, um camera man chamado Antonio Margarete (Eli Roth) e seu assistente Dominic Decoco (Omar Doom).
 
-![](/images/0cHwHgiJcCMhQ9ezp.gif)
+![](/images/0*cHwHgiJcCMhQ9ezp.gif)
 
   
 A cena começa com a epica introdução aos três supostos italianos, seguida por uma fala em italiano da Bridget:
@@ -35,7 +35,7 @@ Veja que quando escrevemos uma palavra que contem "_chi_", a pronuncia dela ser�
 O resto da frase é bem tranquilo de entender para nós que somos falantes em portugues, então vamos seguir com o dialogo.
 
   
-Após a introdução de Bridget, temos o Tenente Aldo Rain — interpretado por Brad Pitt — falando _Buongiorno_ (bom dia) com o sotaque de um redneck do estado do Texas. O que deixa a cena ainda mais engraçada é que a cena se passa durante a noite, o correto seria falar _Buonasera_. Que pode ser tanto "Boa tarde" quanto "Boa noite", também temos _Buonanotte_ para quando está a noite e vamos dormir ou se despedir de uma pessoa, semelhante ao _Good night_ no inglês.
+Após a introdução de Bridget, temos o Tenente Aldo Rain - interpretado por Brad Pitt - falando _Buongiorno_ (bom dia) com o sotaque de um redneck do estado do Texas. O que deixa a cena ainda mais engraçada é que a cena se passa durante a noite, o correto seria falar _Buonasera_. Que pode ser tanto "Boa tarde" quanto "Boa noite", também temos _Buonanotte_ para quando está a noite e vamos dormir ou se despedir de uma pessoa, semelhante ao _Good night_ no inglês.
 
 Hans já sabendo que eles são americanos infiltrados, não se deixa levar pelo erro e começa a falar italiano fluentemente na frente de todos, deixando um silencio constrangedor. Mesmo reduzindo a velocidade do vídeo é quase impossível de entender o que ele está falando com o meu atual conhecimento em italiano, então encontrei essa transcrição no Reddit ([https://www.reddit.com/r/Screenwriting/comments/jwmtxw/need\_help\_transcribing\_a\_scene\_thats\_in\_german](https://www.reddit.com/r/Screenwriting/comments/jwmtxw/need%5Fhelp%5Ftranscribing%5Fa%5Fscene%5Fthats%5Fin%5Fgerman/)):
 
@@ -55,7 +55,7 @@ Em seguida, temos a palavra “Amici”, que é o plural de "amico" (amigo), em 
 
 ![](/images/0Iw0rhPD3CixP5K71.webp)
 
-Imagem retirada do vídeo do Youtube " SINGOLARE E PLURALE-LEZIONE 10" do canal do ITALIANO CON VANY- LIVELLO BASE DALL’ A1 AL B1" — Disponível em: <https://www.youtube.com/watch?v=YEtz9Y20DVQ>. Acesso em: 01/04/2023.
+Imagem retirada do vídeo do Youtube " SINGOLARE E PLURALE-LEZIONE 10" do canal do ITALIANO CON VANY- LIVELLO BASE DALL’ A1 AL B1" - Disponível em: <https://www.youtube.com/watch?v=YEtz9Y20DVQ>. Acesso em: 01/04/2023.
 
 O resto da frase não tem nada de interessante que podemos explorar, vamos seguir então com o resto da fala:
 
@@ -79,7 +79,7 @@ Essa frase é interessante pois temos uma conjugação verbal. Igual temos no po
 
 ![](/images/1IeYONpUKgxJ5N38o3L2c8A.webp)
 
-Conjugação completa do verbo _pronunciare_ no presente do indicativo, tente praticar a pronuncia, lembre-se da maneira que é pronunciado a letra "C", caso tenha esquecido, é só subir o artigo para revisar — Disponível em: <https://it.bab.la/coniugazione/italiano/pronunciare>. Acesso em: 02/04/2023.
+Conjugação completa do verbo _pronunciare_ no presente do indicativo, tente praticar a pronuncia, lembre-se da maneira que é pronunciado a letra "C", caso tenha esquecido, é só subir o artigo para revisar - Disponível em: <https://it.bab.la/coniugazione/italiano/pronunciare>. Acesso em: 02/04/2023.
 
 Mas perceba que a frase de Hans Landa ele utiliza a palavra _lo_ ao invés de _io_, o _lo_ é a mesma coisa que o "it" no ingles, ou seja, para a frase não ficar "Gorlami? pronunciei Gorlami corretamente?", ele usa a palavra Lo, ficando "Gorlomi? pronunciei isso corretamente?". Por fim, onde entra a palavra "io" na frase de Landa para sinalizar que ele está na primeira pessoa do singular? simples, ela é omitida, só do fato dele ter dito o verbo _pronunciare_ como _pronuncio_ já basta no italiano, é igual no portugues quando você fala "Comi uma maçã" ao invés de "Eu comi uma maçã", só pelo jeito que falou o verbo, já da pra entender que foi você que comeu a maçã 🍎.
 
@@ -121,4 +121,4 @@ Segundo o italiano do Reddit (se não fosse por ele, estariamos perdidos), esta 
 
 Por fim, Brad Pitt responde a despedida dos dois com talvez o _Arrivederci_ com o sotaque mais americano já pronunciado na face da terra, encerrando assim essa cena epica do cinema, bom, é isso pessoal, peço que me corrija no campo de comentários se viu que cometi qualquer erro, o italiano é uma lingua muito rica e interessante de aprender, espero um dia ser fluente nela, se gostou, curta e compartilhe, até mais!
 
-![](/images/0yXYHE1VORJtGmS3H.gif)
+![](/images/0*yXYHE1VORJtGmS3H.gif)

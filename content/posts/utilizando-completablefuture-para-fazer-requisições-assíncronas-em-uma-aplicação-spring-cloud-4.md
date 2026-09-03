@@ -31,7 +31,7 @@ A figura 2 mostra respectivamente os scripts do serviço um, que será utilizado
 
 ![](/images/1gR1GPYGtHdJNgXrA_u0vQQ.webp)
 
-Figura 2 — Estrutura dos serviços em Node que serão consumidos.
+Figura 2 - Estrutura dos serviços em Node que serão consumidos.
 
 ## Preparando o orquestrador
 
@@ -39,19 +39,19 @@ Com o projeto criado no _Spring Initializr_, será criado primeiramente algumas 
 
 ![](/images/14U7Uku3IJ7hSwxZyhXo4ZQ.webp)
 
-Figura 3 — POJOs que serão utilizadas no projeto, a classe UserResponse será utilizada como a classe de saída do endpoint, já as demais serão as classes que serão preenchidas ao realizar as requisições.
+Figura 3 - POJOs que serão utilizadas no projeto, a classe UserResponse será utilizada como a classe de saída do endpoint, já as demais serão as classes que serão preenchidas ao realizar as requisições.
 
 Também será criado uma camada de _services_ e _clients_ na aplicação, que ficará responsável principalmente pela responsabilidade de realizar requisições _HTTP_ e retornar um objeto para quem estiver consumindo a camada de _service_, bem semelhante o que existe no _framework frontend Angular_, a implementação pode ser vista na figura 4:
 
 ![](/images/1hSKtoil1DrkreghWqmijJQ.webp)
 
-Figura 4 — Classes responsáveis por realizar as requisições HTTP, note que cada endpoint que será chamado tem sua própria camada de service e client.
+Figura 4 - Classes responsáveis por realizar as requisições HTTP, note que cada endpoint que será chamado tem sua própria camada de service e client.
 
 Feito isso, agora será estruturado o _controller_ da aplicação, a estrutura do método principal conterá as três chamadas para os serviços, logo em seguida, será montado o objeto final do usuário utilizando o padrão de projeto _Builder_, já implementado pelo plugin _Lombok_, a figura 5 demonstra como ficou o resultado final da classe:
 
 ![](/images/170ndlTX_to3ekmkSa31qPg.webp)
 
-Figura 5 — Controller principal da aplicação
+Figura 5 - Controller principal da aplicação
 
 > Não se esqueça de colocar a _annotation_ @EnableFeignClients logo acima da classe _main_ do seu projeto, para a injeção de dependencia @Autowired do _Spring_ funcionar corretamente.
 
@@ -59,7 +59,7 @@ Observe que também foi colocado um _println_ para mostrar no console quanto tem
 
 ![](/images/1NE8Gvg2oZYmL86xNURTMIA.webp)
 
-Figura 6 — Resposta da API funcionando, i see this as an absolute win… right?
+Figura 6 - Resposta da API funcionando, i see this as an absolute win… right?
 
 Perceba que os dados foram retornados corretamente, porém perceba que o tempo da requisição ficou cerca de quatro segundos, o que, dependendo do caso de uso, pode ser bem lento.
 
@@ -69,7 +69,7 @@ A versão 8 do Java possui uma API muito simples de ser utilizada chamada _Compl
 
 ![](/images/1BOfXdmWv1x3FlQRsr41kmw.webp)
 
-Figura 7 — Novo método utilizando a API do CompletableFuture.
+Figura 7 - Novo método utilizando a API do CompletableFuture.
 
 A principal diferença do novo método para o antigo é a de que utilizamos o _CompletableFuture.supplyAsync(Supplier<U> supplier)_ e passamos como argumento um _supplier_ retornando a função no qual é desejado o retorno, no caso, é feito isso nas três chamadas _HTTP_, o que acontece por debaixo dos panos é que cada supplyAsync cria uma nova thread para rodar a requisição paralelamente com a thread principal da aplicação.
 
@@ -83,7 +83,7 @@ Com as alterações feitas, será feito então uma nova requisição pelo _postm
 
 ![](/images/1Qfol7zdRSRfTy_AD3ezywg.webp)
 
-Figura 8 — Requisição feita no novo _endpoint_ usando programação assíncrona, observe que durou 1/3 do tempo original da requisição.
+Figura 8 - Requisição feita no novo _endpoint_ usando programação assíncrona, observe que durou 1/3 do tempo original da requisição.
 
 Com isso, é possível observar o ganho obtido utilizando programação assíncrona com CompletableFuture, que é uma API que já está presente no Java 8 ou versões mais novas.
 

@@ -6,7 +6,7 @@
 {{- $home := .Site.Home.Permalink -}}
 {{- $about := .Site.Params.about -}}
 {{- $skills := delimit ($about.skills.items | default slice) " " -}}
-{{- $index = $index | append (dict "title" "Marco Pegoraro — Portfolio" "description" (.Site.Params.description | default "Software engineering portfolio") "content" (printf "%s %s %s" $about.content $about.skills.title $skills) "permalink" $home) -}}
+{{- $index = $index | append (dict "title" "Marco Pegoraro - Portfolio" "description" (.Site.Params.description | default "Software engineering portfolio") "content" (printf "%s %s %s" $about.content $about.skills.title $skills) "permalink" $home) -}}
 
 {{- range .Site.Params.projects.items -}}
   {{- $badges := delimit (.badges | default slice) " " -}}
@@ -18,7 +18,7 @@
   {{- range .jobs -}}
     {{- $technologies := slice -}}
     {{- range .technologies -}}{{- $technologies = $technologies | append (.name | default .) -}}{{- end -}}
-    {{- $index = $index | append (dict "title" (printf "%s — %s" .name $company) "description" .date "content" (printf "%s %s %s" .content $company (delimit $technologies " ")) "permalink" (printf "%s#experience" $home)) -}}
+    {{- $index = $index | append (dict "title" (printf "%s - %s" .name $company) "description" .date "content" (printf "%s %s %s" .content $company (delimit $technologies " ")) "permalink" (printf "%s#experience" $home)) -}}
   {{- end -}}
 {{- end -}}
 

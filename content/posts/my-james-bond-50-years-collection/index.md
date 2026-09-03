@@ -1,8 +1,7 @@
 ---
-title: "My James Bond 50 Years collection"
 draft: true
+tags: []
 ---
-
 <!-- ---
   author: Marco Pegoraro
   title: How it has been like to own a 1993 honda accord in brazil

@@ -25,7 +25,7 @@ No meu caso, criei um repositório chamado _marcoagpegoraro.github.io_, Com isso
 
 # Como programar utilizando o React e exportar o build para o Github Pages?
 
-Ai que fica interessante, o Github Pages leva em conta o que está na branch main, porém qualquer outra branch é ignorada pelo mesmo, então você poderia criar uma outra branch para o código da sua aplicação, por exemplo, uma branch chamada "develop" ou "react", e quando quiser realizar um deploy para o site em produção, fazer o build da aplicação, como por exemplo, utilizando o comando "npm run build — prod", e pegar o conteudo da pasta "build" gerada e colocar este código na branch main, porém isso seria muito trabalhoso.
+Ai que fica interessante, o Github Pages leva em conta o que está na branch main, porém qualquer outra branch é ignorada pelo mesmo, então você poderia criar uma outra branch para o código da sua aplicação, por exemplo, uma branch chamada "develop" ou "react", e quando quiser realizar um deploy para o site em produção, fazer o build da aplicação, como por exemplo, utilizando o comando "npm run build - prod", e pegar o conteudo da pasta "build" gerada e colocar este código na branch main, porém isso seria muito trabalhoso.
 
 Mas e se tivesse algum comando que faça isso automaticamente? Procurando eu ví que existia já um pacote chamado [gh-pages](https://www.npmjs.com/package/gh-pages) que faz exatamente isso, facilitando demais o processo de deploy, então instalei o pacote na minha aplicação e coloquei o seguinte script no meu package.json
 

@@ -48,12 +48,12 @@ pub run build_runner clean
 No arquivo pubspec.yaml, podemos observar que estamos utilizando a versão 6.0.0-alpha, que é a versão mais recente do framework no momento que este artigo foi escrito. Para darmos continuação ao desenvolvimento, iremos adicionar algumas dependências, o arquivo então ficará assim:
 
   
-1. angular\_router — Dependência do angular utilizado para roteamento.
-2. bulma\_scss — Framework CSS que utilizaremos no projeto.
-3. font\_awesome — Biblioteca de ícones.
-4. http — Biblioteca para realização de requisições HTTP.
-5. angular\_forms — Dependência do angular utilizado para formulários.
-6. sass\_builder — Utilizado para uso de arquivos scss.
+1. angular\_router - Dependência do angular utilizado para roteamento.
+2. bulma\_scss - Framework CSS que utilizaremos no projeto.
+3. font\_awesome - Biblioteca de ícones.
+4. http - Biblioteca para realização de requisições HTTP.
+5. angular\_forms - Dependência do angular utilizado para formulários.
+6. sass\_builder - Utilizado para uso de arquivos scss.
 
 # **Estilos**
 

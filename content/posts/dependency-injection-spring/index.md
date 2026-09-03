@@ -33,13 +33,13 @@ public class GreetingController {
 } 
 ```
 
-When I was a junior developer, I really liked how the @Autowired annotation worked. I thought it was easier to use compared to the constructor method — just one annotation on each dependency and you’re good to go. Not to mention, you don’t need to create a constructor for the class.
+When I was a junior developer, I really liked how the @Autowired annotation worked. I thought it was easier to use compared to the constructor method - just one annotation on each dependency and you’re good to go. Not to mention, you don’t need to create a constructor for the class.
 
 But as time went on, I realized that this is the worse method for doing dependency injection, for a few reasons:
 
 1. It can't guarantee that the dependencies aren't ``null`` at compile time.
 2. It uses reflections in Java to instantiate the dependencies instead of constructing the object in the "normal way"
-3. It makes unit testing more difficult — you're forced to use the @Mock and @InjectMocks annotations, and you can't simply mock each dependency and instantiate the class manually.
+3. It makes unit testing more difficult - you're forced to use the @Mock and @InjectMocks annotations, and you can't simply mock each dependency and instantiate the class manually.
 3. 1. And if you need to mock a @Value variable inside the class, you have to use ReflectionTestUtils. The code becomes much uglier than it needs to be. With constructor injection, you could just pass the string as a parameter.
 4. When you have a very large class with lots of dependencies, it starts to look redundant, with many lines using just the @Autowired annotation.
 
@@ -70,7 +70,7 @@ public class TestUseCase {
 } 
 ```
 
-Look at how big the constructor gets — it's filled with boilerplate code. I get tired just looking at it. The solution? Good old <a href="https://projectlombok.org" target="_blank">Lombok</a>.
+Look at how big the constructor gets - it's filled with boilerplate code. I get tired just looking at it. The solution? Good old <a href="https://projectlombok.org" target="_blank">Lombok</a>.
 
 If you're a Java developer, you most certainly know Lombok, so I won’t go into too much detail. But there are a few different annotations used to generate constructors:
 
@@ -96,7 +96,7 @@ public class TestUseCase {
 } 
 ```
 
-Look at how all the boilerplate code is now gone with just this one annotation. But there's still a problem with this code — can you guess what it is?
+Look at how all the boilerplate code is now gone with just this one annotation. But there's still a problem with this code - can you guess what it is?
 
 It's the fact that we're not specifying the value that valueFromProperties should be filled with using the @Value annotation. To fix this, we still need to use the @Value annotation above the variable, like this:
 
@@ -128,7 +128,7 @@ lombok.copyableAnnotations += org.springframework.beans.factory.annotation.Value
 
 Of course, you could just use the ``@Value`` annotation on a non-final variable, and it would work. But the problem is that you'd need to use ReflectionTestUtils in your unit tests.
 
-By using the final keyword, you can create the component instance by passing the value directly into the constructor — which makes your code cleaner and your tests much simpler.
+By using the final keyword, you can create the component instance by passing the value directly into the constructor - which makes your code cleaner and your tests much simpler.
 
 And that’s why, in my opinion, constructor-based dependency injection is the best approach in Spring.
 
@@ -138,7 +138,7 @@ https://github.com/marcoagpegoraro/spring-dependency-injection-the-best-way
 
 I'm using Java 8 here just to demonstrate how the ``lombok.config`` file works. Depending on your Java and Lombok versions, you may or may not need it.
 
-To check whether you need the config file, open the target folder and inspect the generated .class file. Look at the constructor — if the ``@Value`` annotation appears in the constructor parameters (as shown in the example below), then you're good to go.
+To check whether you need the config file, open the target folder and inspect the generated .class file. Look at the constructor - if the ``@Value`` annotation appears in the constructor parameters (as shown in the example below), then you're good to go.
 
 ![Generated class](./generated-class.webp)
 
@@ -197,6 +197,6 @@ But here's the catch: if you try to use ``@InjectMocks`` with a Java record, it 
 
 I highly recommend using the Mockito.mock approach because it leads to cleaner, more intuitive code. It’s easier to read and understand, and it's consistent with patterns used in many other programming languages. But in the end, it’s up to you and your team to decide what works best for your context.
 
-Another important thing to keep in mind when using Java records as components is that they’re only suitable for stateless components. For example, if you have a variable inside the component that needs to change over time, you can’t use a record — all fields in a record are implicitly final. That said, I believe this is a pretty rare use case in most applications, but it’s definitely something to be aware of.
+Another important thing to keep in mind when using Java records as components is that they’re only suitable for stateless components. For example, if you have a variable inside the component that needs to change over time, you can’t use a record - all fields in a record are implicitly final. That said, I believe this is a pretty rare use case in most applications, but it’s definitely something to be aware of.
 
-And that’s it — see ya! 👋
+And that’s it - see ya! 👋

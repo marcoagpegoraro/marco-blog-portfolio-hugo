@@ -27,9 +27,9 @@ languages:
         title: "Sobre Mim"
         image: "/images/marco-eiffel-tower.webp"
         content: |-
-          Sou Marco, engenheiro de software com experiência em e-commerce, bancos e logística. Minha principal especialidade é Java, e também trabalhei com Kotlin, Python, JavaScript, Angular, React, C#, Go e AWS. Possuo a certificação AWS Solutions Architect – Associate.
+          Sou Marco, engenheiro de software com experiência em e-commerce, bancos e logística. Minha principal especialidade é Java, e também trabalhei com Kotlin, Python, JavaScript, Angular, React, C#, Go e AWS. Possuo a certificação AWS Solutions Architect - Associate.
 
-          Gosto de aprender novas tecnologias e encontrar a solução mais eficaz para cada desafio. Fora do trabalho, gosto de carros, música, relógios e tecnologia vintage — especialmente computadores e videogames dos anos 90 e 2000.
+          Gosto de aprender novas tecnologias e encontrar a solução mais eficaz para cada desafio. Fora do trabalho, gosto de carros, música, relógios e tecnologia vintage - especialmente computadores e videogames dos anos 90 e 2000.
         skills:
           enable: true
           title: "Tecnologias com as quais trabalhei:"
@@ -67,7 +67,7 @@ languages:
         title: "Chi Sono"
         image: "/images/marco-eiffel-tower.webp"
         content: |-
-          Sono Marco, un ingegnere del software con esperienza nell'e-commerce, nel settore bancario e nella logistica. Java è la mia principale competenza; ho lavorato anche con Kotlin, Python, JavaScript, Angular, React, C#, Go e AWS. Ho ottenuto la certificazione AWS Solutions Architect – Associate.
+          Sono Marco, un ingegnere del software con esperienza nell'e-commerce, nel settore bancario e nella logistica. Java è la mia principale competenza; ho lavorato anche con Kotlin, Python, JavaScript, Angular, React, C#, Go e AWS. Ho ottenuto la certificazione AWS Solutions Architect - Associate.
 
           Mi piace imparare nuove tecnologie e trovare la soluzione più efficace per ogni sfida. Fuori dal lavoro mi appassionano auto, musica, orologi e tecnologia vintage, in particolare computer e videogiochi degli anni '90 e 2000.
         skills:
@@ -107,7 +107,7 @@ languages:
         title: "Over Mij"
         image: "/images/marco-eiffel-tower.webp"
         content: |-
-          Ik ben Marco, een software engineer met ervaring in e-commerce, bankieren en logistiek. Java is mijn belangrijkste expertise; daarnaast heb ik gewerkt met Kotlin, Python, JavaScript, Angular, React, C#, Go en AWS. Ik heb de AWS Solutions Architect – Associate-certificering.
+          Ik ben Marco, een software engineer met ervaring in e-commerce, bankieren en logistiek. Java is mijn belangrijkste expertise; daarnaast heb ik gewerkt met Kotlin, Python, JavaScript, Angular, React, C#, Go en AWS. Ik heb de AWS Solutions Architect - Associate-certificering.
 
           Ik leer graag nieuwe technologieën en zoek voor elke uitdaging de meest doeltreffende oplossing. Buiten mijn werk houd ik van auto's, muziek, horloges en vintage technologie, vooral computers en videogames uit de jaren 90 en 00.
         skills:
@@ -215,8 +215,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Marco Pegoraro."
-    subtitle: "Software Engineer at Outtask | Java | CKAD | AWS & Azure | AI"
-    content: "I build practical, reliable software across cloud, data, and web platforms—and write about the technologies and interests that shape my work and life."
+    subtitle: "Senior Software Engineer, Netherlands based"
+    content: "I build practical, reliable software across cloud, data, and web platforms-and write about the technologies and interests that shape my work and life."
     image: "/images/marco-linkedin-profile.webp"
     roundImage: true
     bottomImage:
@@ -247,12 +247,12 @@ params:
     content: |-
       I'm Marco, a software engineer with eight years of experience delivering software across e-commerce, banking, logistics, and consulting. Java is my core expertise, and I also work with Kotlin, Python, JavaScript, Angular, React, C#, Go, and AWS. I hold two AWS certifications, an Azure certification, CKAD, and an MBA in Solution Architecture.
 
-      My experience spans Java and Kotlin back ends with Spring Boot and Kafka; AWS and Terraform; data platforms with Glue, Athena, and QuickSight; and front ends with Angular, React, and Next.js. I enjoy learning new technologies—including practical AI, observability, and cloud-native tooling—and finding the most effective solution to each problem.
+      My experience spans Java and Kotlin back ends with Spring Boot and Kafka; AWS and Terraform; data platforms with Glue, Athena, and QuickSight; and front ends with Angular, React, and Next.js. I enjoy learning new technologies-including practical AI, observability, and cloud-native tooling-and finding the most effective solution to each problem.
 
-      Outside work, I’m into cars, music, watches, and vintage 90s/00s computers and video games—especially the history behind how technology evolved.
+      Outside work, I'm into cars, music, watches, and vintage 90s/00s computers and video games-especially the history behind how technology evolved.
     skills:
       enable: true
-      title: "Technologies I’ve worked with:"
+      title: "Technologies I've worked with:"
       items: ["Java", "Kotlin", "Spring Boot", "Apache Kafka", "OpenFeign", "AWS", "DynamoDB", "SNS & SQS", "Terraform", "GitHub Actions", "Python", "JavaScript", "TypeScript", "Angular", "React", "Next.js", "Go", "Fiber", "GORM", "Django", "Vue 3", "dbt", "Airbyte", "PostgreSQL", "OpenTelemetry", "Prometheus", "Grafana", "AWS Glue", "Athena", "QuickSight"]
 
   experience:
@@ -267,7 +267,7 @@ params:
         countryFlag: "🇳🇱"
         jobs:
           - name: "Software Engineer"
-            date: "January 2026 – Present"
+            date: "January 2026 - Present"
             content: |-
               I build end-to-end products across web, data, and AI. Recent work includes a Django and Vue 3 CV Generator using the Anthropic API, and an internal BI dashboard platform built with Next.js and the Anthropic SDK, applying MCP and RAG practices.
 
@@ -305,9 +305,9 @@ params:
         countryFlag: "🇧🇷"
         jobs:
           - name: "Software Engineer"
-            date: "June 2021 – December 2025"
+            date: "June 2021 - December 2025"
             content: |-
-              I develop and maintain systems for registering credit operations at Latin America’s largest bank. Previously, I built data-integration solutions using Java, EMR, Kafka, and AWS.
+              I develop and maintain systems for registering credit operations at Latin America's largest bank. Previously, I built data-integration solutions using Java, EMR, Kafka, and AWS.
 
               My work includes Java 11 and Kotlin applications, DynamoDB, Python and JavaScript Lambda functions, HTTP and asynchronous communication through SNS, SQS, and Kafka with Schema Registry and Apache Avro. I also implemented a data-mesh flow with DynamoDB Streams, Lambda-based Parquet conversion, Glue Catalog, and Athena.
             technologies:
@@ -345,7 +345,7 @@ params:
         countryFlag: "🇧🇷"
         jobs:
           - name: "Software Developer"
-            date: "September 2020 – June 2021"
+            date: "September 2020 - June 2021"
             content: |-
               I worked on systems that delivered customer notifications by email and WhatsApp. The services used Java 11, Apache Kafka for asynchronous message delivery, and AWS.
 
@@ -369,7 +369,7 @@ params:
         countryFlag: "🇧🇷"
         jobs:
           - name: "Java Developer"
-            date: "January 2020 – September 2020"
+            date: "January 2020 - September 2020"
             content: |-
               On the Itaú Unibank project, I maintained Java 8 applications that made HTTP calls; when calls needed to run concurrently, I used RxJava to coordinate them.
 
@@ -380,7 +380,7 @@ params:
               - name: "Spring"
                 logo: "/portfolio/public/resume-page/tech-logos/spring.png"
           - name: "Intern"
-            date: "August 2019 – January 2020"
+            date: "August 2019 - January 2020"
             content: "Internship at IBM Brazil, building early professional experience on the Itaú Unibank project."
             technologies:
               - name: "Java"
@@ -393,7 +393,7 @@ params:
         countryFlag: "🇧🇷"
         jobs:
           - name: "Technical Developer"
-            date: "July 2018 – August 2019"
+            date: "July 2018 - August 2019"
             content: |-
               This was my first programming role. I began with C# and ASP.NET alongside AngularJS, then became responsible for PHP projects and mobile development with Ionic, where I gained substantial TypeScript experience.
 
@@ -422,7 +422,7 @@ params:
           name: "FIAP"
           url: "https://www.fiap.com.br/"
           logo: "/portfolio/public/resume-page/fiap.jpg"
-        date: "September 2024 – September 2025"
+        date: "September 2024 - September 2025"
         content: |-
           Solution-architecture MBA focused on practical problem-solving and hands-on activities covering the different architecture types in the TOGAF 9.2 framework, as well as the business architecture described in TOGAF 10.
 
@@ -432,7 +432,7 @@ params:
           name: "FATEC Americana"
           url: "https://www.fatec.edu.br/"
           logo: "/portfolio/public/resume-page/fatec.png"
-        date: "2017 – 2020"
+        date: "2017 - 2020"
         content: |-
           Information-security degree focused on network management and the principal OSI-model protocols: Ethernet, IPv4, IPv6, DHCP, ARP, TCP, and UDP. Coursework also covered subnet rules, firewall configuration for secure networks, and Linux.
 
@@ -442,7 +442,7 @@ params:
           name: "ETEC Polivalente de Americana"
           url: "https://etecpolivalente.cps.sp.gov.br/"
           logo: "/portfolio/public/resume-page/poli.png"
-        date: "2014 – 2016"
+        date: "2014 - 2016"
         content: |-
           I completed secondary education alongside a technical IT program. It was my first formal contact with programming and where I discovered the career I wanted to pursue.
 
@@ -452,7 +452,7 @@ params:
     enable: true
     title: "Certifications & Recognition"
     items:
-      - title: "AWS Certified Solutions Architect – Associate"
+      - title: "AWS Certified Solutions Architect - Associate"
         content: "AWS certification earned in August 2024."
         url: "https://www.credly.com/badges/fd13c98b-8cd1-4815-b7f8-bb314d64a9d0"
         image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
@@ -535,7 +535,7 @@ params:
   contact:
     enable: true
     title: "Contact Me"
-    content: "My inbox is always open. Whether you have a question, a project in mind, or simply want to say hi, I’ll do my best to get back to you."
+    content: "My inbox is always open. Whether you have a question, a project in mind, or simply want to say hi, I'll do my best to get back to you."
     btnName: "Send an email"
     btnLink: "mailto:marco@pegoraro.dev"
 

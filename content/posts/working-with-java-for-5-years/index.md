@@ -1,8 +1,7 @@
 ---
-title: "Working with Java for 5 years"
 draft: true
+tags: []
 ---
-
 <!-- ---
   author: Marco Pegoraro
   title: Working with Java for 5 years

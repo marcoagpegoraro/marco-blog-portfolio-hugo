@@ -141,13 +141,13 @@ Aqui criamos uma variável context que guardará as informações de banco de da
   
 Ajustamos o controller para receber o contexto de banco de dados e modicamos todos os métodos http para fazer consultas ao banco de dados utilizando a classe Query do Aqueduct. Mais informações sobre o ORM podem ser encontradas nos links:
 
-## [Basic Queries — Aqueduct](https://aqueduct.io/docs/db/executing%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
+## [Basic Queries - Aqueduct](https://aqueduct.io/docs/db/executing%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
 
-### [ To send commands to a database — whether to fetch, insert, delete or update objects — you will create, configure and…](https://aqueduct.io/docs/db/executing%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
+### [ To send commands to a database - whether to fetch, insert, delete or update objects - you will create, configure and…](https://aqueduct.io/docs/db/executing%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
 
 [aqueduct.io](https://aqueduct.io/docs/db/executing%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
 
-## [Advanced Queries — Aqueduct](https://aqueduct.io/docs/db/advanced%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
+## [Advanced Queries - Aqueduct](https://aqueduct.io/docs/db/advanced%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
 
 ### [ The rows from a table can be sorted and fetched in contiguous chunks. This sorting can occur on most properties. For…](https://aqueduct.io/docs/db/advanced%5Fqueries/?source=post%5Fpage-----bd3afad3ae1a--------------------------------)
 
@@ -214,9 +214,9 @@ jaguar_jwt: ^2.1.6
   
 Em seguida, criaremos um diretório dentro de _lib_ chamado _utils_ e dentro desta pasta, criar um arquivo utils.dart que será utilizado para deixar funções comuns que serão utilizadas por todo o projeto. Dentro deste arquivo, teremos alguns atributos e métodos:
 
-1. jwtKey — A chave privada para a criação dos tokens JWT.
-2. generateJWT — Método que receberá um usuário e retornará uma string (o próprio token JWT).
-3. generateSHA256Hash — Método que irá gerar o hash da senha do usuário.
+1. jwtKey - A chave privada para a criação dos tokens JWT.
+2. generateJWT - Método que receberá um usuário e retornará uma string (o próprio token JWT).
+3. generateSHA256Hash - Método que irá gerar o hash da senha do usuário.
 
 O arquivo utils.dart ficará assim:
 

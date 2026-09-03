@@ -1,8 +1,7 @@
 ---
-title: "Improving my writing skills with ChatGPT"
 draft: true
+tags: []
 ---
-
 <!-- ---
   author: Marco Pegoraro
   title: How it has been like to own a 1993 honda accord in brazil
@@ -12,3 +11,4 @@ draft: true
   header_image: /posts/my-car-a-2017-toyota-etios/toyota-etios.webp
 ---
 ## Introduction
+
